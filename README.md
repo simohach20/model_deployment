@@ -20,7 +20,7 @@ Complete code (including a trained model) to deploy and inference a machine lear
 
 4. Output will contain
 ----------------------
-INFO:     Uvicorn running on http://0.0.0.0:8000
+INFO:     Uvicorn running on [http://0.0.0.0:8000](http://localhost:8000/docs#/)
 
 Use this url in chrome to see the model frontend;
 use http://0.0.0.0:8000/docs for testing the model in the web interface.
@@ -29,7 +29,7 @@ use http://0.0.0.0:8000/docs for testing the model in the web interface.
 --------------
     
  #. Via web interface (chrome):
-        http://0.0.0.0:8000/docs -> test model
+        [http://0.0.0.0:8000/docs](http://localhost:8000/docs#/) -> test model
     
  #. Via python client:
         client.py
@@ -38,5 +38,3 @@ use http://0.0.0.0:8000/docs for testing the model in the web interface.
         .. code-block::
 
             curl -X POST "http://0.0.0.0:8000/predict" -H "accept: application/json" -H "Content-Type: application/json" -d '{"features": [5.1, 3.5, 1.4, 0.2]}'
-
-This repository supports a YouTube `video <>`_
